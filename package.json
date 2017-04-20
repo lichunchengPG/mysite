@@ -1,10 +1,16 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.8.8"
+    "gulp": "^3.9.1"
   },
   "dependencies": {
-    "laravel-elixir": "^4.0.0",
-    "bootstrap-sass": "^3.0.0"
-  }
+    "bootstrap-sass": "^3.3.7",
+    "laravel-elixir": "^6.0.0-15"
+  },
+  "name": "mysite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lichunchengPG/mysite.git",
+  "author": "lichuncheng <lichuncheng101631@icloud.com>",
+  "license": "MIT"
 }
