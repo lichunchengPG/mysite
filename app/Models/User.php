@@ -44,4 +44,14 @@ class User extends Model implements AuthenticatableContract,
 
 
     }
+    //监听creating方法，触发一个事件。creating用于监听模型被创建之前的事件
+    public static function boot()
+    {
+      parent::boot();
+      static::creating(function($user){
+        $user->activation_token = str_random(30);
+      });
+
+    }
+
 }
