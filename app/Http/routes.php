@@ -16,6 +16,7 @@ Route::get('/help','StaticPagesController@help')->name('help');
 Route::get('/about','StaticPagesController@about')->name('about');
 Route::get('/signup','UsersController@create')->name('signup');
 resource('users','UsersController');
+
 //等同于：
 /*
 get('/users', 'UsersController@index')->name('users.index');
@@ -33,4 +34,5 @@ Route::get('signup/comfirm/{token}','UsersController@confirmEmail')->name('confi
 Route::get('password/email','Auth\PasswordController@getEmail')->name('password.reset');
 Route::post('password/email','Auth\PasswordController@postEmail')->name('password.reset');
 Route::get('password/reset/{token}','Auth\PasswordController@getReset')->name('password.edit');
-Route::post('password/reset','Auth\PasswordController@postReset')->name('password.update'); 
+Route::post('password/reset','Auth\PasswordController@postReset')->name('password.update');
+resource('statuses','StatusesController',['only'=>['store','destroy']]);
