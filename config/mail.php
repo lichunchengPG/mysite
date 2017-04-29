@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.163.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,8 +41,8 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
-
+    'port' => env('MAIL_PORT', 25),
+//587
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => null, 'name' => null],
+    'from' => ['address' =>'lichuncheng0418@163.com', 'name' => 'lichuncheng'],
 
     /*
     |--------------------------------------------------------------------------
